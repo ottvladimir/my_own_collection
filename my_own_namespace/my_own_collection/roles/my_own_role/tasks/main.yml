@@ -1,0 +1,12 @@
+---
+# tasks file for my_own_role
+- name: run the module
+  my_own_module:
+    name: NewName
+    path: /tmp/new/
+    content: New file text for test
+    force: false
+  register: testout
+- name: dump test output
+  debug:
+      msg: '({ testout})'
