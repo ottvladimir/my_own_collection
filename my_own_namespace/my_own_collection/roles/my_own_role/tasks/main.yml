@@ -9,4 +9,4 @@
   register: testout
 - name: dump test output
   debug:
-      msg: '({ testout})'
+      msg: '{{ testout}}'
